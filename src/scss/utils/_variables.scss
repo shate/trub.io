@@ -1,0 +1,26 @@
+$footerH : 100px; /*Высота футтера*/
+$base-font-size: 14px;
+$base-font: "PT_Sans-Web-Regular";
+$base-font-color : #333;
+$radius : 25px;
+
+
+
+
+$button-padding: 0;
+$button-font-size : $base-font-size;
+$button-border-width : 0;
+
+[class^="ico-"]{
+	display: inline-block;
+}
+
+$breakpoints: (
+  'small':  767px,
+  'medium': 992px,
+  'large':  1200px
+) !default;
+
+//Названия бэков
+//Пример заполнения (key1: value1, key2: value2, key3: value3);
+$name : ('header':'' )!default;

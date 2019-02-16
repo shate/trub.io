@@ -1,0 +1,31 @@
+body{
+	font-family: $base-font;
+	color: $base-font-color;
+	font-size: $base-font-size;
+	background-color: #fff;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+main{
+	display: flex;
+	flex: 1 0 auto;
+	min-height: 100%;
+
+	.content{
+		background-color: blue;
+	}
+}
+
+.container-fluid{
+  max-width: 970px;
+}
+
+
+
+
+
+
+
+

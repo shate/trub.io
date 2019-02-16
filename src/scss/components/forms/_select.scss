@@ -1,0 +1,51 @@
+.custom-select{
+  &-opener{
+    background-color: #fff;
+
+    &:after{
+      content: '';
+      @include sprite($select);
+      display: inline-block;
+      margin-left: 10px;
+    }
+    &:focus{
+      outline: none;
+    }
+  }
+
+  &-panel{
+    top : auto;
+  }
+ &-option{
+
+   &.has-focus{
+     background-color: $base-middle-orange;
+   }
+ }
+}
+
+.sort{
+  .custom-select{
+    &-opener{
+      font-size: 16px;
+      color: $lighten-grey4;
+      padding-left: 0 !important;
+      @include breakpoint(xsm) {
+        padding: 0.5em !important;
+      }
+    }
+    &-option{
+      text-align: left;
+        font-size: 16px;
+
+    }
+    &-container{
+      width: 170px;
+      text-align: left;
+      @include breakpoint(xsm) {
+        text-align: right;
+      }
+    }
+  }
+}
+

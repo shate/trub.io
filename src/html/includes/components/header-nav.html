@@ -1,0 +1,37 @@
+<nav role="navigation">
+    <%
+    const a = [
+    {
+    title : 'Главная',
+    url :  '#'
+    },
+    {
+    title : 'Каталог',
+    url :  '#'
+    },
+    {
+    title : 'Гарантии и Качество',
+    url :  '#'
+    },
+    {
+    title : 'Отзывы',
+    url :  '#'
+    },
+    {
+    title : 'Оплата',
+    url :  '#'
+    },
+    {
+    title : 'Доставка',
+    url :  '#'
+    },
+    {
+    title : 'Контакты',
+    url :  '#'
+    },
+    ]
+    a.forEach(function(item) {%>
+    <a href="<%-item.url %>"><%-item.title %></a>
+    <%})
+    %>
+</nav>

@@ -1,0 +1,11 @@
+header {
+  padding-top: 5px;
+	background-color: #fff;
+	.logo{
+			@include sprite($logo);
+			text-indent: -9999px;
+			&:focus{
+				outline: none;
+			}
+	}
+}

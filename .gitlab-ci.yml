@@ -1,0 +1,19 @@
+image: node:latest
+
+before_script:
+  - npm i
+
+cache:
+    paths:
+      - node_modules/
+
+pages :
+  script:
+    - npm run build-and-beautify
+    - cp  -R  docs public
+
+  artifacts:
+    paths:
+      - public
+  only:
+      - master

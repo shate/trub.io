@@ -1,0 +1,56 @@
+@charset "UTF-8";
+/*Import Bootstrap*/
+//@import "~bootstrap/scss/bootstrap-reboot";
+//@import "~bootstrap/scss/bootstrap-grid";
+//@import "~bootstrap/scss/_utilities";
+//@import "~bootstrap/scss/_type";
+//@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/bootstrap";
+
+
+/*Import Materialize*/
+//@import "fix-materialize-varibles";
+//@import "~materialize-css/sass/components/variables";
+//@import "~materialize-css/sass/components/badges";
+//@import "~materialize-css/sass/components/transitions";
+//@import "~materialize-css/sass/components/cards";
+//@import "~materialize-css/sass/components/chips";
+//@import "~materialize-css/sass/components/tooltip";
+////@import "~materialize-css/sass/components/buttons";
+//@import "~materialize-css/sass/components/dropdown";
+//@import "~materialize-css/sass/components/waves";
+//@import "~materialize-css/sass/components/modal";
+//@import "~materialize-css/sass/components/toast";
+//
+//@import "~materialize-css/sass/components/collapsible";
+////@import "~materialize-css/sass/components/forms/forms";
+//@import "~materialize-css/sass/components/preloader";
+//@import "~materialize-css/sass/components/datepicker";
+//@import "~materialize-css/sass/components/timepicker";
+//
+///*Import Slick Slider*/
+//@import "~slick-carousel/slick/slick";
+
+/*Import Font Awesome*/
+@import "~font-awesome/scss/font-awesome";
+
+/*Import extra select*/
+//@import "~custom-select/src/css/custom-select.css";
+
+/*Import social likes style*/
+//@import "~social-likes/dist/social-likes_birman.css";
+//@import "~social-likes/dist/social-likes_classic.css";
+//@import "~social-likes/dist/social-likes_flat.css";
+
+/*Import Social likes*/
+@import "~social-buttons/src/css/SocialButtons.css";
+
+/*Import metismenujs*/
+@import "~metismenujs/dist/metismenujs.css";
+
+@import "sprite";
+@import 'utils/module';
+@import 'base/module';
+@import 'layout/module';
+@import 'components/module';
+@import 'navigation/module';

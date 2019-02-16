@@ -1,0 +1,12 @@
+
+//Бэкграунды
+@each $pic-name, $type in $name {
+  @if($type =='') {$type:'jpg'}
+  .bg-#{$pic-name} {
+    background-image: url('../img/#{$pic-name}.#{$type}');
+    background-repeat: no-repeat;
+  }
+}
+
+
+

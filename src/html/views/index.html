@@ -1,0 +1,24 @@
+<% var data = {
+title: "Трубакс | Главная",
+headerNav:  _.template(require('./../includes/components/header-nav.html'))(),
+}; %>
+
+
+<%= _.template(require('./../includes/header.html'))(data) %>
+
+<main role="main">
+    <div class="container-fluid">
+        <div class="row h-100">
+            <div class="col-2 d-flex pr-2">
+                <div class="row ml-0">
+            <%= _.template(require('./../includes/aside.html'))(data) %>
+                </div>
+            </div>
+            <div class="col-10  d-flex">
+                <%= _.template(require('./../includes/main.html'))(data) %>
+            </div>
+            </div>
+        </div>
+</main>
+
+<%= _.template(require('./../includes/footer.html'))(data) %>

@@ -1,0 +1,74 @@
+<footer role="contentinfo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2 pb-3 pb-sm-0">
+                <ul class="nav flex-column footer-nav text-center text-sm-left position-relative">
+                    <%
+                    const a = [
+                    {
+                    title : 'Главная',
+                    url : '#',
+
+                    },
+                    {
+                    title : 'Каталог',
+                    url : '#',
+
+
+                    },
+                    {
+                    title : 'Гарантии и Качество',
+                    url : '#',
+
+                    },
+                    {
+                    title : 'Отзывы',
+                    url : '#',
+
+                    },
+                    {
+                    title : 'Оплата',
+                    url : '#',
+
+                    },
+                    {
+                    title : 'Доставка',
+                    url : '#',
+
+                    },
+                    {
+                    title : 'Контакты',
+                    url : '#',
+                    },
+
+                    ]
+                    a.forEach(function(item) {%>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="<%-item.url %>"> <%-item.title %></a>
+                    </li>
+
+                    <%})
+                    %>
+
+                </ul>
+                </div>
+            <div class="col-sm-6 pt-3 pl-5 pr-5  p-sm-0">
+                <div class="footer-contacts pb-2 pb-sm-0 pt-sm-2 pl-sm-1">
+                    <p class="mb-0">127644, Москва, ул. Ижорская д.15 этаж 1, помещение 2, офис 3/1</p>
+                    <p class="mb-0"><a href="tel:+74993946459" class="text-white">+7 (499) 394-64-59</a></p>
+                    <p class="mb-0"><a href="" class="text-white">zakaz@trubax.ru</a></p>
+                    <p class="mb-0">Компания ООО "Трубакс" 2019</p>
+                </div>
+            </div>
+            <div class="col-sm-4  p-5 p-sm-0">
+                <div class="footer-soc pl-sm-3 pt-sm-2">
+                <p class="text-uppercase footer-soc-title mb-sm-0">мы в социальных сетях:</p>
+                   <div id="share"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/bundle.js"></script>
+</body>
+</html>
