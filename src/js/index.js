@@ -17,9 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
         'click', function () {
             const aside = document.querySelector('aside');
             if(document.documentElement.clientWidth >= 992){
+                aside .classList.remove('tablet-toggled');
                 aside .classList.toggle('toggled');
             }
             else{
+                aside .classList.remove('toggled');
                 aside .classList.toggle('tablet-toggled');
             }
 

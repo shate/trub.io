@@ -1,4 +1,6 @@
 aside{
+  overflow: hidden;
+  transition: width 0.5s linear;
   &:not(.toggled){
     @include breakpoint(sm) {
       width: $aside-middle-width;
@@ -17,11 +19,15 @@ aside{
       &:after{
         display: none;
       }
+      .metismenu{
+        margin-left: 0;
+      }
     }
   }
+
   width: 0;
   position: relative;
-  transition: width 0.5s linear;
+
 
   &.toggled{
     width: $aside-middle-width;
@@ -35,9 +41,8 @@ aside{
       width: 15px;
     }
     .metismenu{
-      width: 0;
-      overflow: hidden;
-      transition: width 0.5s linear;
+      margin-left: - $aside-width;
+
     }
     .btn-title{
       display: none !important;
@@ -49,8 +54,7 @@ aside{
         display: none;
       }
       .metismenu{
-        width: 100% ;
-      overflow: visible ;
+        margin-left: 0;
       }
     }
 

@@ -1,10 +1,7 @@
 .metismenu{
-  width: 0;
-  overflow: hidden;
-  @include breakpoint(lg) {
-    width: 100%;
-    overflow: visible;
-  }
+  width: 100%;
+  margin-left: - $aside-width;
+  transition: margin-left 0.5s linear;
   li{
     margin-bottom: 12px;
     a{
