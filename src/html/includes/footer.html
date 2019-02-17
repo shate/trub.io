@@ -56,7 +56,9 @@
                 <div class="footer-contacts pb-2 pb-sm-0 pt-sm-2 pl-sm-1">
                     <p class="mb-0">127644, Москва, ул. Ижорская д.15 этаж 1, помещение 2, офис 3/1</p>
                     <p class="mb-0"><a href="tel:+74993946459" class="text-white">+7 (499) 394-64-59</a></p>
-                    <p class="mb-0"><a href="" class="text-white">zakaz@trubax.ru</a></p>
+
+                        <button class="btn  p-0 btn-feedback text-white" type="button" data-toggle="modal" data-target="#feedbackModal">zakaz@trubax.ru</button>
+
                     <p class="mb-0">Компания ООО "Трубакс" 2019</p>
                 </div>
             </div>
@@ -69,6 +71,38 @@
         </div>
     </div>
 </footer>
+<div class="modal fade feedback" id="feedbackModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header border-bottom-0">
+                <h5 class="modal-title text-center w-100" id="exampleModalLabel">Обратная связь</h5>
+                <button type="button" class="close pt-1" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            <form action="#" name="feedback">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="user_name" placeholder="Имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="user_mail" placeholder="Email"  required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" placeholder="Email" rows="3"  required>Сообщение</textarea>
+                </div>
+                <p class="text-center">Прикрепить файл:</p>
+                <div class="form-group">
+                <input type="file" name="user-file" class="form-control-file">
+                </div>
+                <div class="text-center">
+                    <button class="btn btn-primary" type="submit">Отправить</button>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="js/bundle.js"></script>
 </body>
 </html>

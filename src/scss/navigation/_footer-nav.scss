@@ -33,7 +33,7 @@
     }
   }
   &-soc{
-    padding: 0 23%;
+
     @include breakpoint(sm) {
       padding: 0;
     }
@@ -55,11 +55,11 @@
     }
   }
   &-contacts{
-    padding: 0 23%;
+
     @include breakpoint(sm) {
       padding: 0;
     }
-    p{
+    p, .btn{
       font-size: 14px;
       letter-spacing: 0.05em;
       line-height: 20px;

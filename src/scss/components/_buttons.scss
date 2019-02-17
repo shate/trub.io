@@ -27,6 +27,17 @@
       font-size: 15px;
     }
   }
+  &.feedback{
+    &:hover{
+      text-decoration: none;
+    }
+  }
+  &-primary{
+    background-color: $main-blue;
+  }
+  &:focus{
+    outline: none;
+  }
 }
 .navbar-toggler{
   i.fa{

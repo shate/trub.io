@@ -1,0 +1,13 @@
+.feedback{
+  input, textarea{
+    border-color: $form-border;
+    &:focus{
+      outline: none;
+      text-align: left !important;
+      box-shadow: none;
+    }
+  }
+  .close{
+    color: $main-blue;
+  }
+}
