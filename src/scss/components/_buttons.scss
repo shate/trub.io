@@ -5,12 +5,20 @@
     z-index: 2;
   }
   &-toggled{
+    font-size: 25px;
+    i.fa{
+      font-size: 37px;
+    }
+    @include breakpoint(sm) {
+      font-size: $base-font-size;
+      i.fa{
+        font-size: 20px;
+      }
+    }
     left: -155px;
     top: 15px;
     box-shadow: none !important;
-    i.fa{
-      font-size: 20px;
-    }
+
   }
   &-mobil{
     font-family: "PT_Sans-Web-Bold";
@@ -18,6 +26,19 @@
     i.fa{
       font-size: 15px;
     }
+  }
+}
+.navbar-toggler{
+  i.fa{
+    font-size: 55px;
+  }
+  @include breakpoint(sm) {
+    i.fa{
+      font-size: 20px;
+    }
+  }
+  &:focus{
+    outline: none;
   }
 }
 

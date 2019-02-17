@@ -5,8 +5,14 @@
   li{
     margin-bottom: 12px;
     a{
+      font-size: 25px;
+      line-height: 39px;
+      @include breakpoint(sm) {
+        font-size: $base-font-size;
+        line-height: 17px;
+      }
       color: $base-font-color;
-      line-height: 17px;
+
       padding-right: 15px;
       &.has-arrow{
         &:after{

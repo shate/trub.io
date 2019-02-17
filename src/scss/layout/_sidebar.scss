@@ -57,7 +57,22 @@ aside{
         margin-left: 0;
       }
     }
+  &.mobil-toggled{
+    width: 100%;
+    overflow: visible;
+    position: absolute;
+    z-index: 200;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: #fff;
+    .metismenu{
+      margin-left: 0;
 
+    }
+  }
 }
 
 

@@ -53,4 +53,27 @@
       }
     }
   }
+  .collapsibleNavbar{
+    &.show{
+      position: absolute;
+      display: block !important;
+      background-color: $main-blue;
+      text-align: center;
+      left: 0;
+      right: 0;
+      top: 60px;
+      z-index: 200;
+      padding-top: 17px;
+      padding-bottom: 65px;
+
+       a{
+         display: block;
+         font-size: 24px;
+         line-height: 53px;
+         &:after{
+           display: none;
+         }
+       }
+    }
+  }
 }
