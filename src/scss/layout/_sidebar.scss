@@ -1,3 +1,69 @@
 aside{
+  &:not(.toggled){
+    @include breakpoint(sm) {
+      width: $aside-middle-width;
+      &:after{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        box-shadow: 15px 0 15px -15px rgba(#000, .7) inset;
+        width: 15px;
+      }
+    }
+    @include breakpoint(lg) {
+      width: $aside-width;
+      &:after{
+        display: none;
+      }
+    }
+  }
+  width: 0;
+  position: relative;
+  transition: width 0.5s linear;
+
+  &.toggled{
+    width: $aside-middle-width;
+    &:after{
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      box-shadow: 15px 0 15px -15px rgba(#000, .7) inset;
+      width: 15px;
+    }
+    .metismenu{
+      width: 0;
+      overflow: hidden;
+      transition: width 0.5s linear;
+    }
+    .btn-title{
+      display: none !important;
+    }
+  }
+  &.tablet-toggled{
+      width: $aside-width;
+      &:after{
+        display: none;
+      }
+      .metismenu{
+        width: 100% ;
+      overflow: visible ;
+      }
+    }
 
 }
+
+
+.sidebar-wrapper{
+
+  padding: 0;
+  //position: fixed;
+
+  z-index: 1;
+  position: relative;
+
+}
+

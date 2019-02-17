@@ -9,17 +9,27 @@ body{
 }
 
 main{
-	display: flex;
-	flex: 1 0 auto;
-	min-height: 100%;
+	width: 100%;
+	padding-left: 10px;
 
 	.content{
-		background-color: blue;
+		background-color: $content-bg ;
+		z-index: 100;
 	}
+
 }
 
 .container-fluid{
   max-width: 970px;
+	&.page-wrapper{
+		display: flex;
+		flex: 1 0 auto;
+		&.toggled{
+			main{
+				margin-left: - $aside-width;
+			}
+		}
+	}
 }
 
 

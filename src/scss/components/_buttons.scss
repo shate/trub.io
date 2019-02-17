@@ -4,6 +4,21 @@
     top: -3px;
     z-index: 2;
   }
+  &-toggled{
+    left: -155px;
+    top: 15px;
+    box-shadow: none !important;
+    i.fa{
+      font-size: 20px;
+    }
+  }
+  &-mobil{
+    font-family: "PT_Sans-Web-Bold";
+    font-size: 24px;
+    i.fa{
+      font-size: 15px;
+    }
+  }
 }
 
 

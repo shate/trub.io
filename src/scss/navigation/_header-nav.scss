@@ -45,4 +45,12 @@
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */;
     }
   }
+  .sidenav-trigger{
+    i.fa{
+      font-size: 50px;
+      @include breakpoint(sm) {
+        font-size: 22px;
+      }
+    }
+  }
 }

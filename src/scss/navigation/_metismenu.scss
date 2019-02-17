@@ -1,9 +1,16 @@
 .metismenu{
+  width: 0;
+  overflow: hidden;
+  @include breakpoint(lg) {
+    width: 100%;
+    overflow: visible;
+  }
   li{
     margin-bottom: 12px;
     a{
       color: $base-font-color;
       line-height: 17px;
+      padding-right: 15px;
       &.has-arrow{
         &:after{
           right: 0;
@@ -12,7 +19,7 @@
           width: .7em;
           height: .7em;
           border-width: 2px 0 0 2px;
-          top: 17px;
+          top: 13px;
         }
       }
     }

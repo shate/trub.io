@@ -10,11 +10,26 @@ require ('social-buttons/src/js/es6-promise');
 import MetisMenu from 'metismenujs';
 
 document.addEventListener('DOMContentLoaded', function() {
+    const toggledButton = document.getElementById('toggled');
 
 
-    new MetisMenu("#menu", {
-        //toggle: false
-    });
+    toggledButton.addEventListener(
+        'click', function () {
+            const aside = document.querySelector('aside');
+            if(document.documentElement.clientWidth >= 992){
+                aside .classList.toggle('toggled');
+            }
+            else{
+                aside .classList.toggle('tablet-toggled');
+            }
+
+        }
+    );
+   if(document.getElementById('menu')){
+       new MetisMenu("#menu", {        
+       });
+   }
+  
 
     if(document.getElementById('share')){
         new SocialButtons({
