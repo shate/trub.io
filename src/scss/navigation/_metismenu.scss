@@ -22,7 +22,10 @@
           width: .7em;
           height: .7em;
           border-width: 2px 0 0 2px;
-          top: 13px;
+          top: 27px;
+          @include breakpoint(sm) {
+            top: 13px;
+          }
         }
       }
     }

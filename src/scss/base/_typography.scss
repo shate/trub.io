@@ -46,11 +46,14 @@
 a{
     color: $main-blue;
 	text-decoration: none;
+	&.decoration{
+		text-decoration: underline;
+	}
 }
 
 p{
 	font-size: $base-font-size;
-	line-height: 29px;
+	line-height: 17px;
 }
 .text{
    &-black{
@@ -59,27 +62,18 @@ p{
   &-light-blue{
     color: $light-blue;
   }
-}
-.bg{
-
-}
-h1, h3{
-	font-family: "TT Norms Medium";
-
-}
-h1{
-	font-size: 36px;
+	&-base{
+		color: $base-font-color;
+	}
 }
 
-h3 {
-	font-size: 27px;
-	letter-spacing: 0.02em;
-	margin-bottom: 18px;
-}
-h4{
+h1, h3, h6{
 	font-family: "PT_Sans-Web-Bold";
-	font-size: 24px;
 
+}
+h6{
+	line-height: 1.5;
+	margin-bottom: 0.9rem;
 }
 strong{
 	font-family: "PT_Sans-Web-Bold";
