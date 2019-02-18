@@ -16,7 +16,7 @@
       padding-right: 15px;
       &.has-arrow{
         &:after{
-          right: 0;
+          right: 2px;
           color: $main-blue;
           transform: rotate(130deg);
           width: .7em;
@@ -25,6 +25,9 @@
           top: 13px;
         }
       }
+    }
+    &.active{
+      margin-bottom: 0;
     }
   }
 }
