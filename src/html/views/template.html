@@ -1,6 +1,9 @@
 <% var data = {
 title: "Трубакс | Главная",
-headerNav:  _.template(require('./../includes/components/header-nav.html'))(),
+item:   _.template(require('./../includes/components/item.html'))(),
+feedback:  _.template(require('./../includes/forms/feedback.html'))() ,
+loader:   _.template(require('./../includes/components/loader.html'))(),
+mainCarousel:   _.template(require('./../includes/components/mainCarousel.html'))(),
 }; %>
 <%= _.template(require('./../includes/header.html'))(data) %>
     <div class="container-fluid page-wrapper position-relative">
@@ -12,3 +15,8 @@ headerNav:  _.template(require('./../includes/components/header-nav.html'))(),
         </main>
     </div>
 <%= _.template(require('./../includes/footer.html'))(data) %>
+<%= _.template(require('./../includes/includes.html'))(data) %>
+
+<script src="js/bundle.js"></script>
+</body>
+</html>

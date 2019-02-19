@@ -1,36 +1,32 @@
 <div class="content pt-3">
     <div class="text-center d-sm-none pt-2 pt-sm-0">
-        <button class="btn btn-mobil" id="btn-mobil" type="button">Меню<i class="fa fa-chevron-down ml-2" aria-hidden="true"></i>
+        <button class="btn btn-mobil" id="btn-mobil" type="button">Меню<i class="fa fa-chevron-down ml-2"
+                                                                          aria-hidden="true"></i>
         </button>
     </div>
-  <section>
-      <div class="slider">
-
-      </div>
-  </section>
+    <section class="d-none d-lg-block">
+            <%= mainCarousel %>
+    </section>
     <section>
-        <div class="d-flex flex-wrap">
-        <% for (var i=1; i<=15; i++){ %>
-        <div class="item">
-            <a href="">
-            <div class="card">
-            <figure>
-                <img src="img/pic/1.jpg" alt="" class="w-100">
-            </figure>
-            <p class="text-center mb-0"><a href="">Задвижки</a></p>
-            </div>
-            </a>
-        </div>
-        <%}%>
+        <div class="row flex-wrap">
+            <% for (var i=1; i<=15; i++){ %>
+            <%= item %>
+            <%}%>
         </div>
     </section>
     <section>
         <h6>О магазине</h6>
         <article>
-            <p>Компания ООО "Трубакс" занимается поставкой запорной арматуры и сантехнических узлов промышленного назначения. Отпускные, оптовые цены позволяют нам быть конкурентоспособными в данной нише и также совершать сделки и осуществлять поставку товара в минимальные сроки, что порой очень важно для наших заказчиков.</p>
-            <p><a href="" class="text-base decoration">Приобрести трубопроводную арматуру и  детали трубопровода</a> вы можете в нашем интернет магазине www.trubax.ru позвонив нам по телефону
-                <a href="tel:+74993946459" class="text-base decoration">+7(499) 394 64 59</a> | заполнив форму на сайте или написать свою потребность нам на почту zakaz@trubax.ru Наши менеджеры выставят счет в течении 30 минут и уже через 48 часов (после оплаты) наши водители доставят заказ вам на обьект бесплатно по
-                <a href=""  class="text-base decoration">Москве и ближайшему подмосковью.</a></p>
+            <p>Компания ООО "Трубакс" занимается поставкой запорной арматуры и сантехнических узлов промышленного
+                назначения. Отпускные, оптовые цены позволяют нам быть конкурентоспособными в данной нише и также
+                совершать сделки и осуществлять поставку товара в минимальные сроки, что порой очень важно для наших
+                заказчиков.</p>
+            <p><a href="" class="text-base decoration">Приобрести трубопроводную арматуру и детали трубопровода</a> вы
+                можете в нашем интернет магазине www.trubax.ru позвонив нам по телефону
+                <a href="tel:+74993946459" class="text-base decoration">+7(499) 394 64 59</a> | заполнив форму на сайте
+                или написать свою потребность нам на почту zakaz@trubax.ru Наши менеджеры выставят счет в течении 30
+                минут и уже через 48 часов (после оплаты) наши водители доставят заказ вам на обьект бесплатно по
+                <a href="" class="text-base decoration">Москве и ближайшему подмосковью.</a></p>
         </article>
     </section>
 </div>

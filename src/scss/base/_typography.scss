@@ -33,6 +33,49 @@
   url("../fonts/PT_Sans-Web-Bold.svg") format("svg");
 }
 
+//@font-face {
+//	font-family: "Montserrat-Black";
+//	src: url("../fonts/Montserrat-Black.eot?") format("embedded-opentype"),
+//	url("../fonts/Montserrat-Black.woff2") format("woff2"),
+//	url("../fonts/Montserrat-Black.woff") format("woff"),
+//	url("../fonts/Montserrat-Black.ttf") format("truetype"),
+//	url("../fonts/Montserrat-Black.svg") format("svg");
+//}
+@font-face {
+	font-family: "Montserrat-BoldItalic";
+	src: url("../fonts/Montserrat-BoldItalic.eot?") format("embedded-opentype"),
+	url("../fonts/Montserrat-BoldItalic.woff2") format("woff2"),
+	url("../fonts/Montserrat-BoldItalic.woff") format("woff"),
+	url("../fonts/Montserrat-BoldItalic.ttf") format("truetype"),
+	url("../fonts/Montserrat-BoldItalic.svg") format("svg");
+}
+@font-face {
+	font-family: "Montserrat-ExtraBold";
+	src: url("../fonts/Montserrat-ExtraBold.eot?") format("embedded-opentype"),
+	url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"),
+	url("../fonts/Montserrat-ExtraBold.woff") format("woff"),
+	url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"),
+	url("../fonts/Montserrat-ExtraBold.svg") format("svg");
+}
+
+@font-face {
+	font-family: "Montserrat-MediumItalic";
+	src: url("../fonts/Montserrat-MediumItalic.eot?") format("embedded-opentype"),
+	url("../fonts/Montserrat-MediumItalic.woff2") format("woff2"),
+	url("../fonts/Montserrat-MediumItalic.woff") format("woff"),
+	url("../fonts/Montserrat-MediumItalic.ttf") format("truetype"),
+	url("../fonts/Montserrat-MediumItalic.svg") format("svg");
+}
+
+@font-face {
+	font-family: "Montserrat-SemiBold";
+	src: url("../fonts/Montserrat-SemiBold.eot?") format("embedded-opentype"),
+	url("../fonts/Montserrat-SemiBold.woff2") format("woff2"),
+	url("../fonts/Montserrat-SemiBold.woff") format("woff"),
+	url("../fonts/Montserrat-SemiBold.ttf") format("truetype"),
+	url("../fonts/Montserrat-SemiBold.svg") format("svg");
+}
+
 @font-face {
 	font-family: 'social-icon';
 	src: url('../fonts/social-icon.eot?pzyb1y');
@@ -54,6 +97,9 @@ a{
 p{
 	font-size: $base-font-size;
 	line-height: 17px;
+	&.mItalic{
+		font-family: "Montserrat-MediumItalic";
+	}
 }
 .text{
    &-black{
@@ -67,10 +113,13 @@ p{
 	}
 }
 
-h1, h3, h6{
+h1, h3, h2,h6{
 	font-family: "PT_Sans-Web-Bold";
-
+	&.mItalic{
+		font-family: "Montserrat-MediumItalic";
+	}
 }
+
 h6{
 	line-height: 1.5;
 	margin-bottom: 0.9rem;

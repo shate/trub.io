@@ -1,0 +1,67 @@
+.main-slider{
+
+  background: rgb(47,112,223); /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse farthest-corner, rgba(47,112,223,1) 0%, rgba(4,67,174,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse farthest-corner, rgba(47,112,223,1) 0%,rgba(4,67,174,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(47,112,223,1) 0%,rgba(4,67,174,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f70df', endColorstr='#0443ae',GradientType=1 );
+  .carousel{
+    &-control-next{
+      right: -10px;
+    }
+     &-control-prev{
+       left: -10px;
+    }
+    &-control-prev-icon, &-control-next-icon{
+      width: 90px;
+      height: 90px;
+    }
+    &-indicators{
+      li{
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid #6894de;
+        &.active{
+          background-color: #6894de;
+        }
+      }
+    }
+    &-item{
+      height: 320px;
+      &-description{
+        hgroup{
+          h2{
+            font-family: "Montserrat-ExtraBold";
+            font-size: 2.2rem;
+
+          }
+          h4{
+            &.it{
+              font-family: "Montserrat-BoldItalic";
+            }
+
+          }
+          h6{
+            font-size: 1.05rem;
+            line-height: 1.2;
+            &.mBold{
+              font-family: "Montserrat-SemiBold";
+
+            }
+          }
+          h3{
+            font-family: "Montserrat-ExtraBold";
+            font-size: 27px;
+          }
+        }
+      }
+      .media{
+        padding: 0 40px 0 60px;
+      }
+    }
+  }
+
+
+}
