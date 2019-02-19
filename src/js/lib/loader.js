@@ -4,8 +4,7 @@
 
 window.onload = function () {
     if( document.getElementById('preloader')){
-        document.getElementById('preloader').remove();
+        const preloader = document.getElementById('preloader');
+        document.body.removeChild(preloader);
     }
-
-
 }
