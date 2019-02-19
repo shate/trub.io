@@ -10,8 +10,9 @@ body{
 
 main{
 	width: 100%;
-	padding-left: 10px;
-
+	@include breakpoint(sm){
+		padding-left: 10px;
+	}
 	.content{
 		background-color: $content-bg ;
 		z-index: 100;

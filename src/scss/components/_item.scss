@@ -1,11 +1,18 @@
 .item{
   .card{
-    padding: 60px 15px 35px;
-    border: none;
+    padding: 40px 10px 20px;
     position: relative;
     box-shadow:0 0 29px rgba(#ddd, 0.9);
+    border: 1px solid $item-border;
+    @include breakpoint(sm){
+      border: none;
+      padding: 60px 15px 35px;
+    }
     figure{
-      margin-bottom: 55px;
+      margin-bottom: 25px;
+      @include breakpoint(sm){
+        margin-bottom: 55px;
+      }
     }
   &:before{
     content: '';
