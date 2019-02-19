@@ -5,6 +5,5 @@
 import Lazy from 'jquery-lazy';
 
 document.addEventListener('DOMContentLoaded', function () {
-    console.log($('.lazyload'))
     $('.lazy').Lazy();
 });

@@ -1,6 +1,7 @@
 /**
  * Created by Пользователь on 19.03.2018.
  */
+require ('./lib/resetCarousel');
 window.$ = window.jQuery = require('jquery');
 //require('slick-carousel');
 require ('popper.js');
