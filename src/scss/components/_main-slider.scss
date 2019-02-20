@@ -1,10 +1,6 @@
 .main-slider{
   overflow: hidden;
-  background: rgb(47,112,223); /* Old browsers */
-  background: -moz-radial-gradient(center, ellipse farthest-corner, rgba(47,112,223,1) 0%, rgba(4,67,174,1) 100%); /* FF3.6-15 */
-  background: -webkit-radial-gradient(center, ellipse farthest-corner, rgba(47,112,223,1) 0%,rgba(4,67,174,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: radial-gradient(ellipse at center, rgba(47,112,223,1) 0%,rgba(4,67,174,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f70df', endColorstr='#0443ae',GradientType=1 );
+
   .carousel{
     &-control-next{
       right: -10px;
@@ -30,7 +26,14 @@
     }
     &-item{
       height: 320px;
+      img{
+        width: 100%;
+        height: 100%;
+      }
       &-description{
+        top: 0;
+        width: 60%;
+        max-width: 60%;
         hgroup{
           h2{
             font-family: "Montserrat-ExtraBold";
@@ -55,6 +58,15 @@
             font-family: "Montserrat-ExtraBold";
             font-size: 27px;
           }
+        }
+        &.title-right{
+          right: 0;
+          padding-right: 85px;
+
+        }
+        &.title-left{
+          left: 0;
+          padding-left: 85px;
         }
       }
       .media{
