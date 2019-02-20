@@ -14,6 +14,7 @@ require('./lib/collapseBtn');
 require('./lib/btnMobil');
 require('./lib/socialButtons');
 require('./lib/lazyLoad');
+require('./lib/initYmaps');
 
 require('./lib/loader');
 

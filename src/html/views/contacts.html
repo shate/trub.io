@@ -1,0 +1,28 @@
+<% var data = {
+title: "Трубакс | Контакты",
+feedback:  _.template(require('./../includes/forms/feedback.html'))() ,
+loader:   _.template(require('./../includes/components/loader.html'))(),
+
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+    <div class="container-fluid page-wrapper position-relative">
+        <aside>
+            <%= _.template(require('./../includes/aside.html'))(data) %>
+        </aside>
+        <main role="main">
+            <div class="content pl-sm-2 pt-3">
+                <div class="text-center d-sm-none pt-2 pt-sm-0">
+                    <button class="btn btn-mobil" id="btn-mobil" type="button">Меню<i class="fa fa-chevron-down ml-2"
+                                                                                      aria-hidden="true"></i>
+                    </button>
+                </div>
+            <%= _.template(require('./../includes/contacts.html'))(data) %>
+            </div>
+        </main>
+    </div>
+<%= _.template(require('./../includes/footer.html'))(data) %>
+<%= _.template(require('./../includes/includes.html'))(data) %>
+
+<script src="js/bundle.js"></script>
+</body>
+</html>
