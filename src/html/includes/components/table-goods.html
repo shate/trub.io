@@ -1,0 +1,36 @@
+<table class="table table-goods">
+    <caption class="pb-3 mb-1">Аналогичные товары</caption>
+    <thead>
+    <tr>
+        <th>Артикул</th>
+        <th>Наименование</th>
+        <th class="pice">Цена (с НДС)</th>
+        <th>Кол-во</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% for (var i=1; i<=8; i++){ %>
+    <tr>
+        <td>6207844</td>
+        <td><a href=""><u>Задвижка чугунная с обрезиненным клином
+            30ч39р тип МЗВ(Г) Ру-16 Ду-40</u></a></td>
+        <td>4 125 ₽</td>
+        <td>
+            <table>
+                <row>
+                    <td class="border-0 p-1">
+                        <button class="btn  text-primary  p-0"> -</button>
+                    </td>
+                    <td class="border-0 p-1"><strong>1</strong></td>
+                    <td class="border-0 p-1">
+                        <button class="btn  text-primary  p-0"> +</button>
+                    </td>
+                    <td class="border-0 p-1"><i class="ico-basket-blue ml-2"></i></td>
+                </row>
+            </table>
+        </td>
+    </tr>
+    <%}%>
+
+    </tbody>
+</table>

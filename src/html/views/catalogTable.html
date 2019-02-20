@@ -1,5 +1,5 @@
 <% var data = {
-title: "Трубакс | Карточка товара",
+title: "Трубакс | Каталог таблица",
 feedback:  _.template(require('./../includes/forms/feedback.html'))() ,
 loader:   _.template(require('./../includes/components/loader.html'))(),
 tableGoods :  _.template(require('./../includes/components/table-goods.html'))(),
@@ -10,8 +10,15 @@ tableGoods :  _.template(require('./../includes/components/table-goods.html'))()
             <%= _.template(require('./../includes/aside.html'))(data) %>
         </aside>
         <main role="main">
-            <%= _.template(require('./../includes/components/breadcrumb.html'))() %>
-            <%= _.template(require('./../includes/card.html'))(data) %>
+            <div class="content pl-sm-2">
+                <div class="text-center d-sm-none pt-2 pt-sm-0">
+                    <button class="btn btn-mobil" id="btn-mobil" type="button">Меню<i class="fa fa-chevron-down ml-2"
+                                                                                      aria-hidden="true"></i>
+                    </button>
+                </div>
+            <%= _.template(require('./../includes/components/breadcrumb2.html'))() %>
+            <%= _.template(require('./../includes/catalog-table.html'))(data) %>
+            </div>
         </main>
     </div>
 <%= _.template(require('./../includes/footer.html'))(data) %>
