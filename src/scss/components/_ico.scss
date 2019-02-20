@@ -1,0 +1,8 @@
+.ico{
+  &-basket{
+    @include sprite($basket);
+    &-blue{
+      @include sprite($basket-blue);
+    }
+  }
+}

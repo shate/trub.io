@@ -9,9 +9,7 @@
       text-decoration: underline;
       color: #fff;
     }
-    .ico-basket{
-      @include sprite($basket);
-    }
+
     &.basket{
       &:after{
         display: none;

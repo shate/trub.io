@@ -1,0 +1,22 @@
+<% var data = {
+title: "Трубакс | Карточка товара",
+feedback:  _.template(require('./../includes/forms/feedback.html'))() ,
+loader:   _.template(require('./../includes/components/loader.html'))(),
+
+}; %>
+<%= _.template(require('./../includes/header.html'))(data) %>
+    <div class="container-fluid page-wrapper position-relative">
+        <aside>
+            <%= _.template(require('./../includes/aside.html'))(data) %>
+        </aside>
+        <main role="main">
+            <%= _.template(require('./../includes/components/breadcrumb.html'))() %>
+            <%= _.template(require('./../includes/card.html'))(data) %>
+        </main>
+    </div>
+<%= _.template(require('./../includes/footer.html'))(data) %>
+<%= _.template(require('./../includes/includes.html'))(data) %>
+
+<script src="js/bundle.js"></script>
+</body>
+</html>

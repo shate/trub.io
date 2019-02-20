@@ -1,0 +1,23 @@
+.breadcrumb{
+  &-item{
+    font-size: 12px;
+
+    & + .breadcrumb-item{
+      padding-left: 0.25rem;
+      &:before{
+        content: '\203A';
+        color: $base-font-color;
+        padding-right: 0.25rem;
+        font-size: 16px;
+        line-height: 1;
+      }
+    }
+    &.active{
+        color: $base-font-color;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+    }
+  }
+}

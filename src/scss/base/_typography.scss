@@ -3,16 +3,16 @@
 	src: url("../fonts/PT_Sans-Web-Regular.eot?") format("embedded-opentype"),
 	url("../fonts/PT_Sans-Web-Regular.woff2") format("woff2"),
 	url("../fonts/PT_Sans-Web-Regular.woff") format("woff"),
-	url("../fonts/PT_Sans-Web-Regular.ttf") format("truetype"),
-	url("../fonts/PT_Sans-Web-Regular.swg") format("svg");
+	url("../fonts/PTSans-Regular.ttf") format("truetype"),
+	url("../fonts/PTSans-Regular.swg") format("svg");
 }
 @font-face {
 	font-family: "PT_Sans-Web-BoldItalic";
 	src: url("../fonts/PT_Sans-Web-BoldItalic.eot?") format("embedded-opentype"),
 	url("../fonts/PT_Sans-Web-BoldItalic.woff2") format("woff2"),
 	url("../fonts/PT_Sans-Web-BoldItalic.woff") format("woff"),
-	url("../fonts/PT_Sans-Web-BoldItalic.ttf") format("truetype"),
-	url("../fonts/PT_Sans-Web-BoldItalic.svg") format("svg");
+	url("../fonts/PTSans-BoldItalic.ttf") format("truetype"),
+	url("../fonts/PTSans-BoldItalic.svg") format("svg");
 }
 
 @font-face {
@@ -20,8 +20,8 @@
 	src: url("../fonts/PT_Sans-Web-Italic.eot?") format("embedded-opentype"),
 	url("../fonts/PT_Sans-Web-Italic.woff2") format("woff2"),
 	url("../fonts/PT_Sans-Web-Italic.woff") format("woff"),
-	url("../fonts/PT_Sans-Web-Italic.ttf") format("truetype"),
-	url("../fonts/PT_Sans-Web-Italic.svg") format("svg");
+	url("../fonts/PTSans-Italic.ttf") format("truetype"),
+	url("../fonts/PTSans-Italic.svg") format("svg");
 }
 
 @font-face {
@@ -29,8 +29,8 @@
   src: url("../fonts/PT_Sans-Web-Bold.eot?") format("embedded-opentype"),
   url("../fonts/PT_Sans-Web-Bold.woff2") format("woff2"),
   url("../fonts/PT_Sans-Web-Bold.woff") format("woff"),
-  url("../fonts/PT_Sans-Web-Bold.ttf") format("truetype"),
-  url("../fonts/PT_Sans-Web-Bold.svg") format("svg");
+  url("../fonts/PTSans-Bold.ttf") format("truetype"),
+  url("../fonts/PTSans-Bold.svg") format("svg");
 }
 
 //@font-face {
@@ -96,10 +96,16 @@ a{
 
 p{
 	font-size: $base-font-size;
-	line-height: 17px;
+	line-height: 18px;
 	&.mItalic{
 		font-family: "Montserrat-MediumItalic";
 	}
+	&.price{
+		font-size: 24px;
+	}
+}
+.base-font-size{
+	font-size: $base-font-size !important;
 }
 .text{
    &-black{
@@ -111,6 +117,12 @@ p{
 	&-base{
 		color: $base-font-color;
 	}
+	&-success{
+		color: $success;
+	}
+	&-primary{
+		color: $main-blue;
+	}
 }
 
 h1, h3, h2,h6{
@@ -119,11 +131,24 @@ h1, h3, h2,h6{
 		font-family: "Montserrat-MediumItalic";
 	}
 }
-
+h1{
+	font-size: 20px;
+}
 h6{
 	line-height: 1.5;
 	margin-bottom: 0.9rem;
 }
 strong{
 	font-family: "PT_Sans-Web-Bold";
+}
+b{
+	font-family: "Montserrat-SemiBold";
+}
+.big{
+	font-size: 23px;
+	line-height: 1;
+}
+.sBig{
+	font-size: 36px;
+	line-height: 1;
 }
