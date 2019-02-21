@@ -32,6 +32,74 @@ table{
       }
       }
     }
+    &-delivery{
+      table-layout: fixed;
+      thead{
+        display: none;
+        @include breakpoint(sm) {
+          display: table-header-group;
+        }
+      }
+      th{
+        font-weight: normal;
+        background-color: $th-bg;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        &:first-child{
+          width: 50%;
+          @include breakpoint(md) {
+            width: 60%;
+          }
+        }
+        &:last-child{
+          width: 40px;
+          @include breakpoint(lg){
+            width: 50px;
+          }
+        }
+
+        &:nth-child(2){
+          width: 100px;
+        }
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4){
+          text-align: center;
+        }
+      }
+      td{
+        vertical-align: middle;
+        &:nth-child(4),  &:nth-child(2){
+          font-size: 30px;
+          button{
+            font-size: 30px;
+          }
+        }
+        @include breakpoint(sm){
+          height: 152px;
+          &:nth-child(4),  &:nth-child(2){
+            font-size: $base-font-size;
+            button{
+              font-size: $base-font-size;
+            }
+          }
+
+        }
+
+       &:nth-child(2),
+        &:nth-child(3){
+        text-align: center;
+      }
+        img {
+          width: 50px;
+          height: 80px;
+          @include breakpoint(lg) {
+            width: 70px;
+            height: 120px;
+          }
+        }
+      }
+    }
   }
   caption{
     font-family: "PT_Sans-Web-Bold";

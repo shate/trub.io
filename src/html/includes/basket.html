@@ -1,0 +1,85 @@
+<div class="d-flex  mb-2 mt-3 mt-sm-0">
+    <h6 class="mb-0">Корзина</h6>
+    <p class="flex-grow-1 text-right text-sm center mb-0 note"><strong>Уважаемые клиенты! <br class="d-sm-none"> Минимальная стоимость заказа начинается от 10
+        000 рублей!</strong></p>
+</div>
+<section>
+    <table class="table table-borderless table-delivery mb-1">
+        <thead>
+        <tr>
+            <th>Наименование</th>
+            <th>Количество</th>
+            <th class="d-none d-lg-table-cell">Вес</th>
+            <th>Цена</th>
+            <th class="p-0"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% for (var i=1; i<=3; i++){ %>
+        <tr>
+            <td class="d-block d-sm-table-cell">
+                <div class="media align-items-center">
+                    <img src="img/pic/ph1.jpg" alt="" class="d-none d-sm-inline-block">
+                    <div class="media-body pl-sm-3 pl-md-5">
+                        <a href="card.html"><u>Задвижка чугунная с обрезиненным клином
+                            30ч39р тип МЗВ(Г) Ру-16 Ду-40</u></a>
+                    </div>
+                </div>
+            </td>
+            <td  class="d-block d-sm-table-cell">
+                <table>
+                    <td class="border-0 p-1">
+                        <button class="btn  text-primary  p-0"> -</button>
+                    </td>
+                    <td class="border-0 p-1">1 шт.</td>
+                    <td class="border-0 p-1">
+                        <button class="btn  text-primary  p-0"> +</button>
+                    </td>
+                </table>
+            </td>
+            <td  class="d-none d-lg-table-cell">10 кг</td>
+            <td class="d-block d-sm-table-cell text-sm-center">
+                4 125 ₽
+            </td>
+            <td class="d-none d-sm-table-cell p-0 text-sm-center">
+                <button class="btn p-0 mb-2">
+                    <svg class="fill-primary  ico-close">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+            </td>
+        </tr>
+        <%}%>
+
+        </tbody>
+    </table>
+</section>
+<section class="mb-4 mb-sm-5 pb-2 pb-sm-3">
+    <div class="text-right mb-3 pb-1">
+        <a href="" class="h6"><u>Очистить корзину</u></a>
+    </div>
+    <div class="text-sm-right bg-primary pl-4 pr-2 total">
+        <h6 class="text-white mb-0"><span class="d-sm-none">Итог, с доставкой: <br></span><span class="d-none d-sm-inline">Итого:</span> <span class="d-none d-sm-inline">2ш. 10кг</span> 10000 рублей</h6>
+    </div>
+</section>
+<section class="mb-sm-5">
+    <div class="text-center">
+        <p class="h6 mb-4 pb-1">Для уточнения информации по заказу, оставьте свои данные и наш менеджер свяжется с вами. </p>
+        <form action="" name="order" class="d-inline-block">
+            <div class="form-group mb-2 pb-1">
+                <input type="text" class="form-control text-center form-control-sm d-inline-block rounded-0" name="user_name" placeholder="Ваше имя" required>
+            </div>
+            <div class="form-group mb-2 pb-1">
+                <input type="tel" class="form-control text-center form-control-sm d-inline-block rounded-0" name="phone" placeholder="Номер телефона" required>
+            </div>
+            <div class="form-group mb-4 mb-sm-2 pb-2">
+                <input type="text" class="form-control text-center form-control-sm d-inline-block rounded-0" name="address" placeholder="Адрес доставки" required>
+            </div>
+            <i ><small class="d-block mb-4 mb-sm-3 pb-3 pb-sm-0">Предоставляя свои персональные данные <br>
+                Пользователь даёт согласие на обработку, <br>
+                хранение и использование своих персональных данных <br>
+                на основании ФЗ № 152-ФЗ «О персональных данных» от 27.07.2006 г.</small></i>
+            <button class="btn btn-primary btn-slg rounded-0" type="submit">Отправить</button>
+        </form>
+    </div>
+</section>

@@ -15,6 +15,7 @@ require('./lib/btnMobil');
 require('./lib/socialButtons');
 require('./lib/lazyLoad');
 require('./lib/initYmaps');
+require('./lib/uploadInput');
 
 require('./lib/loader');
 

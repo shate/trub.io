@@ -1,13 +1,21 @@
 .feedback{
-  input, textarea{
-    border-color: $form-border;
-    &:focus{
-      outline: none;
-      text-align: left !important;
-      box-shadow: none;
-    }
-  }
   .close{
     color: $main-blue;
   }
+  .upload-form{
+
+    span{
+      cursor: pointer;
+      text-decoration: underline;
+      color: $main-blue;
+    }
+  }
+}
+
+
+
+#f_name {
+  background: transparent;
+  border: 0;
+
 }

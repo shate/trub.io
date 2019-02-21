@@ -1,0 +1,11 @@
+form[name=order]{
+  @include breakpoint(sm){
+    width: 360px;
+  }
+
+  .form-group{
+    .form-control{
+      width: 280px;
+    }
+  }
+}

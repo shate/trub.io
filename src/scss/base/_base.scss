@@ -8,5 +8,55 @@
   }
 }
 
+.bg-del{
+  background-position: -10000px bottom;
+  @include breakpoint(lg){
+    background-position: right bottom;
+  }
+  &-tablet{
+    background-position: -10000px bottom;
+    @include breakpoint(sm){
+      background-position: 130% bottom;
+    }
+    @include breakpoint(md){
+      background-position: 115% bottom;
+    }
+    @include breakpoint(lg){
+      background-position: -200% bottom;
+    }
+  }
+}
 
+.bg{
+  &-primary{
+    background-color: $main-blue !important;
 
+  }
+}
+.total{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @include breakpoint(sm) {
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+   h6{
+     font-size: 24px;
+     line-height: 1.4;
+     @include breakpoint(sm){
+       line-height: 1.5;
+       font-size: $base-font-size;
+     }
+   }
+}
+.note{
+  color: $danger;
+  font-size: 12px;
+  @include breakpoint(md){
+    font-size: 1rem;
+  }
+  @include breakpoint(lg) {
+    color: $base-font-color;
+
+  }
+}

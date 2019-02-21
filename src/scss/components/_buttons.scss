@@ -27,8 +27,9 @@
       font-size: 15px;
     }
   }
-  &.feedback{
+  &-feedback{
     font-size: inherit;
+    border: 0;
     &:hover{
       text-decoration: none;
     }
@@ -36,6 +37,7 @@
   }
   &-primary{
     background-color: $main-blue;
+
   }
   &:focus{
     outline: none;

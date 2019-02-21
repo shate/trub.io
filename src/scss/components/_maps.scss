@@ -1,5 +1,14 @@
 .maps-height{
-  height: 375px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+  height: 175px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  @include breakpoint(md){
+    height: 305px;
+  }
+  @include breakpoint(lg){
+    height: 375px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
 }

@@ -1,0 +1,15 @@
+form{
+  input, textarea{
+    &.form-control{
+      border-color: $form-border;
+      &:focus{
+        outline: none;
+        text-align: left !important;
+        box-shadow: none;
+      }
+    }
+  }
+  input[type=file]{
+    display: none;
+  }
+}

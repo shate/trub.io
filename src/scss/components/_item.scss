@@ -35,13 +35,34 @@
     }
   }
   &:nth-child(1),
-  &:nth-child(2),
-  &:nth-child(3),
-  &:nth-child(4){
-   .card{
-     &:before{
-       display: none;
-     }
-   }
+  &:nth-child(2){
+    .card{
+      &:before{
+        display: none;
+      }
+    }
+  }
+  @include breakpoint(md) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3){
+      .card{
+        &:before{
+          display: none;
+        }
+      }
+    }
+  }
+  @include breakpoint(lg) {
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4){
+      .card{
+        &:before{
+          display: none;
+        }
+      }
+    }
   }
 }

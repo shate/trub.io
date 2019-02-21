@@ -5,4 +5,25 @@
       @include sprite($basket-blue);
     }
   }
+  &-close{
+    width: 20px;
+    height: 20px;
+  }
+  &-time{
+    width: 24px;
+    height: 24px;
+  }
+  &-phone{
+    width: 15px;
+    height: 19px;
+  }
+  &-document-add, &-document{
+    width: 18px;
+    height: 22px;
+  }
+}
+.fill{
+  &-primary{
+    fill : $main-blue;
+  }
 }
