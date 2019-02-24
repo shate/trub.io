@@ -13,10 +13,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     if(isMobil && carousel ){
-
+ console.log('mobil')
         carousel.remove();
     }
     if(isTablet && carousel ){
+        console.log('tablet')
         const removeCarousel = carouselParent.removeChild(carousel);
 
         const handler = () =>{
@@ -24,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 carousel.remove();
             }
             else{
-                header.append(removeCarousel);
+                header.appendChild(removeCarousel);
 
             }
         }
