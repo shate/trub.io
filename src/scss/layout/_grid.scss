@@ -1,14 +1,18 @@
+html, body{
+	height: 100%;
+}
+
 body{
 	font-family: $base-font;
 	color: $base-font-color;
 	font-size: $base-font-size;
 	background-color: #fff;
-	height: 100vh;
-	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
-
+header{
+	flex: 0 0 auto;
+}
 main{
 	width: 100%;
 	padding-bottom: 15px;
@@ -19,7 +23,6 @@ main{
 		background-color: $content-bg ;
 		z-index: 100;
 	}
-
 }
 
 .container-fluid{
@@ -37,7 +40,9 @@ main{
 	}
 }
 
-
+footer {
+	flex: 0 0 auto;
+}
 
 
 

@@ -1,6 +1,7 @@
 header {
   padding-top: 5px;
 	background-color: #fff;
+	//min-height: 119px;
 	.logo{
 			@include sprite($logo);
 			text-indent: -9999px;

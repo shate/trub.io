@@ -3,7 +3,11 @@ footer {
 	padding-top: 39px;
 	padding-bottom: 15px;
 	color: #fff;
+
 	@include breakpoint(sm) {
 		padding-top: 8px;
+	}
+	.container-fluid{
+		overflow: hidden;
 	}
 }
