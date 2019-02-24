@@ -24,6 +24,7 @@ aside{
         right: 0;
         box-shadow: 15px 0 15px -15px rgba(#000, .7) inset;
         width: 15px;
+        z-index: 20;
       }
     }
     @include breakpoint(lg) {
