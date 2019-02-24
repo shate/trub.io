@@ -7,14 +7,39 @@ import {isTablet, isMobil} from './consts';
 document.addEventListener('DOMContentLoaded', function () {
 
     const carousel =  document.getElementById('mainCarousel');
-    const continer = document.querySelector('.container-fluid.page-wrapper');
+    const carouselParent = carousel.parentNode;
+    const header = document.querySelector('header');
+
+
 
     if(isMobil && carousel ){
+
         carousel.remove();
     }
     if(isTablet && carousel ){
-        carousel.classList.remove('mb-4');
-        document.body.insertBefore(carousel, continer);
+        const removeCarousel = carouselParent.removeChild(carousel);
+
+        const handler = () =>{
+            if(document.documentElement.clientWidth >= 576 ){
+                carousel.remove();
+            }
+            else{
+                header.append(removeCarousel);
+
+            }
+        }
+        if(document.documentElement.clientWidth >= 576 ){
+            carousel.classList.remove('mb-4');
+            header.append(removeCarousel);
+        }
+     if( screen.onorientationchange){
+         screen.onorientationchange = handler;
+     }
+     else{
+         window.addEventListener( 'orientationchange', handler);
+     }
+
+
     }
 
 });

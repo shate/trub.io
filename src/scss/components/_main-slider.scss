@@ -38,31 +38,37 @@
         top: 0;
         width: 60%;
         max-width: 60%;
-        hgroup{
-          h2{
+         &_big{
+           font-family: "Montserrat-ExtraBold";
+           font-size: 2.2rem;
+           text-transform: uppercase;
+           line-height: 1.2;
+           margin-bottom: 0.8rem;
+
+         }
+          &_big-italic{
+            font-family: "Montserrat-BoldItalic";
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+          }
+        &_small-italic{
+          font-family: "Montserrat-MediumItalic";
+
+        }
+        &_small{
+          font-family: "PT_Sans-Web-Bold";
+          text-transform: uppercase;
+          font-size: 1rem;
+          line-height: 1.5;
+          margin-bottom: 0.9rem;
+        }
+
+          &_middle{
             font-family: "Montserrat-ExtraBold";
-            font-size: 2.2rem;
-
-          }
-          h4{
-            &.it{
-              font-family: "Montserrat-BoldItalic";
-            }
-
-          }
-          h6{
-            font-size: 1.05rem;
-            line-height: 1.2;
-            &.mBold{
-              font-family: "Montserrat-SemiBold";
-
-            }
-          }
-          h3{
-            font-family: "Montserrat-ExtraBold";
+            text-transform: uppercase;
             font-size: 27px;
           }
-        }
+
         &.title-right{
           right: 0;
           padding-right: 85px;
