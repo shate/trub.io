@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
     if(isTablet && carousel ){
         carousel.classList.remove('mb-4');
+        carousel.classList.add('isMove');
         header.append(carousel);
      }
 });
