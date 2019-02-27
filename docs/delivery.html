@@ -38,7 +38,7 @@
                                     <a href="tel:+74993946459"
                                                                                                  class="text-black">+7
                                     (499) 394-64-59</a></p>
-                                    <button class="btn d-none d-md-block p-0 btn-feedback" type="button" data-toggle="modal" data-target="#feedbackModal"><i class="fa fa-envelope-o fa-lg mr-2" aria-hidden="true"></i>zakaz@trubax.ru</button>
+                                    <a href="mailto:zakaz@trubax.ru" class="d-none d-md-block p-0 text-black"><i class="fa fa-envelope-o fa-lg mr-2" aria-hidden="true"></i><u>zakaz@trubax.ru</u></a>
                 </div>
                         <div class="d-none d-md-flex align-items-center pl-3">
                             <form action="#" class="search w-100">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
                 <div class="col-10 col-sm-6 col-md-5 col-lg-4 d-flex justify-content-end justify-content-sm-between justify-content-lg-end align-items-center">
-                    <a href="#" class="header-nav-link calc mr-4 mr-sm-0">
+                    <a href="#" class="header-nav-link calc mr-4 mr-sm-0" data-toggle="modal" data-target="#feedbackModal">
                         Расчет стоимости
                     </a>
                     <a href="basket.html" class="header-nav-link basket ml-lg-4 d-none d-sm-inline-block">
@@ -111,11 +111,9 @@
 </header>
     <div class="container-fluid page-wrapper position-relative bg-del bg-del-tablet">
         <aside>
-            
-    <div class="w-100 sidebar-wrapper pt-3">
-        <div class="collapse-btn  pb-2">
-            <button class="btn p-0 btn-toggled d-flex align-items-center mt-3 mt-sm-0" id="toggled"><i class="fa fa-bars" aria-hidden="true"></i> <strong class="ml-3 d-sm-none d-lg-inline btn-title">Меню</strong></button>
-
+                <div class="w-100 sidebar-wrapper pt-3">
+        <div class="collapse-btn  pb-2 d-lg-none">
+            <button class="btn p-0 btn-toggled d-flex align-items-center mt-3 mt-sm-0" id="toggled"><i class="fa fa-bars" aria-hidden="true"></i></button>
         </div>
         <ul class="nav flex-column metismenu" id="menu">
             
@@ -315,62 +313,63 @@
     </div>
 <footer role="contentinfo">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-2 pb-3 pb-sm-0">
-                <ul class="nav flex-column footer-nav text-center text-sm-left position-relative">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html"> Главная</a>
-                    </li>
+        <div class="d-md-flex footer-row">
+            <ul class="nav flex-column footer-nav text-center text-md-left position-relative">
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html"> Главная</a>
+                </li>
 
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" href="catalog.html"> Каталог</a>
-                    </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="catalog.html"> Каталог</a>
+                </li>
 
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" href="guarantees.html"> Гарантии и Качество</a>
-                    </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="guarantees.html"> Гарантии и Качество</a>
+                </li>
 
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" href="response.html"> Отзывы</a>
-                    </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="response.html"> Отзывы</a>
+                </li>
 
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" href="payment.html"> Оплата</a>
-                    </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="payment.html"> Оплата</a>
+                </li>
 
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" href="delivery.html"> Доставка</a>
-                    </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="delivery.html"> Доставка</a>
+                </li>
 
-                    
-                    <li class="nav-item">
-                        <a class="nav-link active" href="contacts.html"> Контакты</a>
-                    </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" href="contacts.html"> Контакты</a>
+                </li>
 
-                    
+                
 
-                </ul>
-                </div>
-            <div class="col-sm-6 pt-3 pl-5 pr-5  p-sm-0">
-                <div class="footer-contacts pb-2 pb-sm-0 pt-sm-2 pl-sm-1">
-                    <p class="mb-0">127644, Москва, ул. Ижорская д.15 этаж 1, помещение 2, офис 3/1</p>
-                    <p class="mb-0"><a href="tel:+74993946459" class="text-white">+7 (499) 394-64-59</a></p>
+            </ul>
 
-                        <button class="btn  p-0 btn-feedback text-white" type="button" data-toggle="modal" data-target="#feedbackModal">zakaz@trubax.ru</button>
+            <div class="footer-contacts pt-md-2">
+                <p class="mb-0">127644, Москва, ул. Ижорская д.15 этаж 1, помещение 2, офис 3/1</p>
+                <p class="footer-contacts_tel"><a href="tel:+74993946459" class="text-white">+7 (499) 394-64-59</a></p>
+                <a href="mailto:zakaz@trubax.ru" class="mail text-white"><u>zakaz@trubax.ru</u></a>
+                <p class="mb-0 mt-1 copyright">
+                    Компания ООО "Трубакс" 2019
+                </p>
 
-                    <p class="mb-0">Компания ООО "Трубакс" 2019</p>
-                </div>
             </div>
-            <div class="col-sm-4  p-5 p-sm-2">
-                <div class="footer-soc pl-sm-3 pt-sm-2">
-                <p class="text-uppercase footer-soc-title mb-sm-0">мы в социальных сетях:</p>
-                   <div id="share"></div>
+            <div class="footer-soc pr-md-2 pt-md-2 flex-grow-1 text-center text-md-right">
+                <div class="d-inline-block">
+                    <p class="text-uppercase footer-soc-title mb-md-0">мы в социальных сетях:</p>
+                    <div  class="text-left pt-2 soc">
+                        <a href="https://www.instagram.com/trubax.ru/" title="В контакте"><i class="ico-inst"></i></a>
+                        <a href="https://vk.com/trubax" title="Инстаграм"><i class="ico-vk"></i></a>
+                    </div>
                 </div>
             </div>
         </div>

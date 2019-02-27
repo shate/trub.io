@@ -21,6 +21,12 @@
     width: 18px;
     height: 22px;
   }
+  &-inst{
+    @include sprite($inst);
+  }
+  &-vk{
+    @include sprite($vk);
+  }
 }
 .fill{
   &-primary{

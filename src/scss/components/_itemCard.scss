@@ -1,0 +1,15 @@
+.itemCard{
+   &-prev{
+      min-width: 230px;
+      padding-top: 60px;
+      @include breakpoint(md){
+         padding-top: 10px;
+      }
+
+   }
+   &-description{
+     .price{
+        margin-bottom: 10px;
+     }
+   }
+}

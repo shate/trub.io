@@ -13,25 +13,25 @@ document.addEventListener('DOMContentLoaded', function() {
     toggledButton.addEventListener(
         'click', function () {
             const parentStyle =  getComputedStyle(btnMobil.parentElement);
-            const asideStyle =  getComputedStyle(aside);
+         //   const asideStyle =  getComputedStyle(aside);
             const btnMobilVisible  = ( parentStyle.display == 'block')? true : false;
-            const asideWidth = parseInt(asideStyle.width);
-
-            console.log( asideWidth)
+          //  const asideWidth = parseInt(asideStyle.width);
 
 
 
-            if ( !isMobil && !isTablet) {
-                  if( asideWidth < 100){
-                      aside.classList.remove('toggled');
-                      aside.classList.toggle('tablet-toggled');
-                  }
-                  else{
-                      aside.classList.remove('tablet-toggled');
-                      aside.classList.toggle('toggled');
-                  }
 
-               }
+
+            // if ( !isMobil && !isTablet) {
+            //       if( asideWidth < 100){
+            //           aside.classList.remove('toggled');
+            //           aside.classList.toggle('tablet-toggled');
+            //       }
+            //       else{
+            //           aside.classList.remove('tablet-toggled');
+            //           aside.classList.toggle('toggled');
+            //       }
+            //
+            //    }
 
                 if(btnMobilVisible ){
                     aside.classList.remove('mobil-toggled', 'tablet-toggled');
