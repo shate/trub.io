@@ -1,1 +1,59 @@
-<h1>Отзывы</h1>
+<h6 class="responses-page-title">Отзывы</h6>
+<div class="responses d-flex flex-wrap pb-4">
+    <% for (var i=1; i<=4; i++){ %>
+    <div class="response">
+        <div class="response-title mb-2">
+            <p class="mb-0">Николай</p>
+            <p class="mb-0">Дроздов</p>
+        </div>
+        <div class="stars-rating mb-3">
+            <i class="fa fa-star text-primary" aria-hidden="true"></i>
+            <i class="fa fa-star text-primary" aria-hidden="true"></i>
+            <i class="fa fa-star text-primary" aria-hidden="true"></i>
+            <i class="fa fa-star text-primary" aria-hidden="true"></i>
+            <i class="fa fa-star-o text-primary" aria-hidden="true"></i>
+        </div>
+        <p class="response-text">Задача организации, в особенности же постоянное информационно-пропагандистское
+            обеспечение нашей деятельности играет важную роль в формировании новых предложений. Разнообразный и богатый
+            опыт постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в
+            формировании новых предложений. Равным образом новая модель организационной деятельности играет важную роль
+            в формировании соответствующий условий активизации. Таким образом сложившаяся структура организации
+            представляет собой интересный эксперимент проверки модели развития. </p>
+    </div>
+    <%}%>
+
+</div>
+<div class="text-center pb-5 mb-4 more">
+    <button type="button" class="btn btn-primary btn-lg rounded-0">Еще отзывы</button>
+</div>
+<p class="pt-2 text-1">Для того, что бы оставить отзыв, заполните поля. </p>
+<form action="" name="form-response" id="form-response">
+    <div class="form-group mb-2">
+        <input type="text" name="" class="text-center form-control  input-sm" placeholder="Ваше имя">
+    </div>
+    <p class="text-1 mb-1">Число звезд</p>
+    <div class="stars-radio">
+
+        <label for="star1" data-target="1" class="fa fa-star-o text-primary">
+            <input type="radio" name="stars" id="star1" value="1">
+        </label>
+        <label for="star2" data-target="2" class="fa fa-star-o text-primary">
+            <input type="radio" name="stars" id="star2" value="1">
+        </label>
+        <label for="star3" data-target="3" class="fa fa-star-o text-primary">
+            <input type="radio" name="stars" id="star3" value="3">
+        </label>
+        <label for="star4" data-target="4" class="fa fa-star-o text-primary">
+            <input type="radio" name="stars" id="star4" value="4">
+        </label>
+        <label for="star5" data-target="5" class="fa fa-star-o text-primary">
+            <input type="radio" name="stars" id="star5" value="5">
+        </label>
+    </div>
+    <div class="form-group">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Текст отзыва" class="form-control"></textarea>
+    </div>
+    <div class="text-center">
+        <button type="submit" class="btn btn-primary btn-lg rounded-0">Отправить</button>
+    </div>
+</form>

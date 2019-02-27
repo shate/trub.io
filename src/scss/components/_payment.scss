@@ -1,0 +1,32 @@
+.payment{
+  margin-top: -3px;
+  @include breakpoint(sm) {
+    width: 400px;
+    display: inline-block;
+  }
+
+  @include breakpoint(lg){
+    margin-top: 0;
+  }
+  position: relative;
+  padding-top: 27px;
+  padding-bottom: 40px;
+  &:before, &:after{
+    content: '';
+    position: absolute;
+    width: 245px;
+    height: 25px;
+    border: 5px solid $main-blue;
+    left: 50%;
+    margin-left: -120px;
+    background-color: #fff;
+  }
+  &:before{
+    top: -25px;
+    border-bottom: 0;
+  }
+  &:after{
+    bottom: 0;
+    border-top: 0;
+  }
+}

@@ -15,5 +15,6 @@ require('./lib/initYmaps');
 require('./lib/uploadInput');
 
 require('./lib/loader');
+require('./lib/starsRating');
 
 

@@ -16,6 +16,9 @@ table{
       }
     }
     &-goods{
+      @include breakpoint(lg) {
+        table-layout: fixed;
+      }
       border-color: $main-blue ;
       th, td{
         border: 1px solid $main-blue;
@@ -30,6 +33,15 @@ table{
         &.price{
           width: 110px;
       }
+        @include breakpoint(lg){
+          &:first-child, &:last-child{
+            width: 120px;
+          }
+          &:nth-child(2){
+            width: 400px;
+          }
+        }
+
       }
     }
     &-delivery{

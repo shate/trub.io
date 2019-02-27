@@ -1,0 +1,27 @@
+form[name=form-response]{
+  @include breakpoint(sm){
+    width: 280px;
+  }
+
+  padding-top: 15px;
+  margin-bottom: 80px;
+  input{
+    border-radius: 0;
+    &.input-sm{
+      height: 29px;
+    }
+  }
+  textarea{
+    height: 175px;
+    border-radius: 0;
+    margin-bottom: 60px;
+  }
+ .stars-radio{
+
+   .fa{
+     font-size: 17px;
+     margin-right: 7px;
+     cursor: pointer;
+   }
+ }
+}

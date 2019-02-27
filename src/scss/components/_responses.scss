@@ -1,0 +1,39 @@
+.responses{
+    padding-left: 10px;
+  .response{
+    @include breakpoint(sm) {
+      padding-right: 40%;
+    }
+    @include breakpoint(lg){
+      width: 50%;
+      padding-right: 6%;
+      padding-bottom: 20px;
+    }
+    padding-bottom: 40px;
+    &-title{
+      p{
+        line-height: 15px;
+      }
+    }
+    &-text{
+      line-height: 1.2;
+    }
+    p{
+      font-size: 12px;
+    }
+  }
+  &-page-title{
+    margin-bottom: 45px;
+    @include breakpoint(lg) {
+      margin-bottom: 30px;
+    }
+  }
+}
+.more{
+  @include breakpoint(sm){
+    width: 280px;
+  }
+  @include breakpoint(lg){
+    width: 100%;
+  }
+}

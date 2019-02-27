@@ -27,6 +27,12 @@
   &-vk{
     @include sprite($vk);
   }
+  &-car{
+    @include sprite($car);
+  }
+  &-card{
+    @include sprite($card);
+  }
 }
 .fill{
   &-primary{

@@ -65,3 +65,19 @@
     margin-right: 10px;
   }
 }
+.bordered{
+
+  &-blue{
+    padding-bottom:  10px;
+    border-bottom: 2px solid $form-border;
+    margin-bottom: 65px;
+  }
+}
+.label{
+  &-red{
+    background-color: $red;
+    color: #fff;
+    padding: 8px 14px;
+
+  }
+}
