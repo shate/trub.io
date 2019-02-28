@@ -11,6 +11,9 @@ aside{
   width: 0;
   background-color: #fff;
   padding-top: 20px;
+  .metismenu .active>.has-arrow:after, .metismenu .has-arrow[aria-expanded=true]:after{
+    transform-origin: 3px -2px;
+  }
   @include breakpoint(sm) {
     position: relative;
   }
