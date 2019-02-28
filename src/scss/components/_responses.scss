@@ -1,15 +1,16 @@
 .responses{
     padding-left: 10px;
   .response{
+    padding-bottom: 40px;
     @include breakpoint(sm) {
       padding-right: 40%;
     }
     @include breakpoint(lg){
       width: 50%;
       padding-right: 6%;
-      padding-bottom: 20px;
+      padding-bottom: 55px;
     }
-    padding-bottom: 40px;
+
     &-title{
       p{
         line-height: 15px;

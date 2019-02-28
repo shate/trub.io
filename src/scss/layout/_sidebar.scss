@@ -10,6 +10,7 @@ aside{
   position: absolute;
   width: 0;
   background-color: #fff;
+  padding-top: 20px;
   @include breakpoint(sm) {
     position: relative;
   }

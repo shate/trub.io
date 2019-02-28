@@ -24,10 +24,19 @@ table{
         border: 1px solid $main-blue;
        vertical-align: middle;
         min-height: 50px;
-        height: 50px;
+        height: 48px;
         padding-top: 0;
         padding-bottom: -0px;
         text-align: center;
+      }
+      td{
+        &:first-child{
+          font-size: 17px;
+        }
+        &:nth-child(2){
+          font-size: 12px;
+          line-height: 13px;
+        }
       }
       th{
         &.price{
