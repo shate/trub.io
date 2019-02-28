@@ -93,6 +93,10 @@ a{
 		text-decoration: underline;
 	}
 }
+span.decoration{
+	border-bottom: 1px solid;
+	border-color: currentColor;
+}
 
 p{
 	font-size: $base-font-size;
@@ -132,10 +136,13 @@ p{
 }
 
 
-h1, h3, h2,h6{
+h1, h3, h4, h5, h2,h6{
 	font-family: "PT_Sans-Web-Bold";
 	&.mItalic{
 		font-family: "Montserrat-MediumItalic";
+	}
+	&.main-title{
+		font-size: 1rem !important;
 	}
 }
 h1, .h1{
