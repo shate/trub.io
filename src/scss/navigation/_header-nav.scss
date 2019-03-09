@@ -1,13 +1,23 @@
 .header-nav{
   background-color: $main-blue;
   height: 60px;
+  a{
+    &.text-white{
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
   &-link{
-    color: #fff;
-    letter-spacing: 0;
     position: relative;
-    &:hover{
-      text-decoration: underline;
+    list-style: none;
+    a{
       color: #fff;
+      letter-spacing: 0;
+      &:hover{
+        text-decoration: underline;
+        color: #fff;
+      }
     }
 
     &.basket{

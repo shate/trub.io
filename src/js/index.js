@@ -16,5 +16,6 @@ require('./lib/uploadInput');
 
 require('./lib/loader');
 require('./lib/starsRating');
+require('./lib/jsAddition');
 
 

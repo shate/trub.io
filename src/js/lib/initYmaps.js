@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const mapStorageContainer = document.getElementById('mapStorage');
     if( mapContainer || mapStorageContainer){
 
-        ymaps.load().then(maps => {
+        ymaps.load('https://api-maps.yandex.ru/2.1/?lang=ru_RU').then(maps => {
             const placemark = new maps.Placemark([55.895404, 37.522585], {
                 balloonContent : 'ул. Ижорская д.15 этаж 1, помещение 2, офис 3/1'
             }, {});

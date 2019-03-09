@@ -20,20 +20,28 @@
                         <p class="mb-4">Артикул: 6207847</p>
                         <p class="price"><strong>4 450 ₽</strong></p>
                     </div>
+                    <form action="" class="jsAddition">
+                        <input type="hidden" name="count" value="1">
                     <div>
                         <div class="d-inline-block">
+
                             <table class="mb-4">
                                 <row>
                                     <td>
-                                        <button class="btn  text-primary sBig pt-0 pb-0 pl-0"> -</button>
+                                        <button class="btn  text-primary sBig pt-0 pb-0 pl-0" data-sum="minus" type="button"> -</button>
                                     </td>
-                                    <td class="big"><strong>1</strong></td>
+                                    <td class="big"><strong class="jsSum">1</strong></td>
                                     <td>
-                                        <button class="btn  text-primary sBig pt-0 pb-0 pl-2"> +</button>
+                                        <button class="btn  text-primary sBig pt-0 pb-0 pl-2" data-sum="plus" type="button"> +</button>
                                     </td>
-                                    <td class="pl-2"><i class="ico-basket-blue mt-2"></i></td>
+                                    <td class="pl-2">
+                                        <button type="submit" class="btn p-0">
+                                        <i class="ico-basket-blue mt-2"></i>
+                                        </button>
+                                    </td>
                                 </row>
                             </table>
+
                         </div>
                     </div>
                     <div class="pt-1 pt-md-1 pb-3">
@@ -41,7 +49,7 @@
                             запрос</strong>
                         </button>
                     </div>
-
+                    </form>
                     <p class="mb-3  text-right text-md-left">Вы можете написать на нашу почту
                         <a href="mailto:zakaz@trubax.ru" class="decoration">zakaz@trubax.ru</a>
 

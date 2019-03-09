@@ -69,7 +69,7 @@ table{
         &:first-child{
           width: 50%;
           @include breakpoint(md) {
-            width: 60%;
+            width: 55%;
           }
         }
         &:last-child{
@@ -90,6 +90,7 @@ table{
       }
       td{
         vertical-align: middle;
+        line-height: 1.2 !important;
         &:nth-child(4),  &:nth-child(2){
           font-size: 30px;
           button{
@@ -111,14 +112,7 @@ table{
         &:nth-child(3){
         text-align: center;
       }
-        img {
-          width: 50px;
-          height: 80px;
-          @include breakpoint(lg) {
-            width: 70px;
-            height: 120px;
-          }
-        }
+
       }
     }
   }
