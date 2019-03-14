@@ -11,12 +11,13 @@
             <th>Количество</th>
             <th class="d-none d-lg-table-cell">Вес</th>
             <th>Цена</th>
+            <th>Сумма</th>
             <th class="p-0"></th>
         </tr>
         </thead>
         <tbody>
         <% for (var i=1; i<=3; i++){ %>
-        <tr>
+        <tr class="calc">
             <td class="d-block d-sm-table-cell">
                 <div class="media align-items-center">
                     <img src="img/pic/ph1.jpg" alt="" class="d-none d-sm-inline-block">
@@ -27,19 +28,25 @@
                 </div>
             </td>
             <td  class="d-block d-sm-table-cell">
+                <form method="post" class="ms2_form jsAddition" role="form">
+                    <input type="hidden" name="count" value=""/>
                 <table>
                     <td class="border-0 p-1">
-                        <button class="btn  text-primary  p-0"> -</button>
+                        <button class="btn  text-primary  p-0" data-sum="minus"  type="button"> -</button>
                     </td>
-                    <td class="border-0 p-1">1 шт.</td>
+                    <td class="border-0 p-1"><span class="jsSum">1</span> шт.</td>
                     <td class="border-0 p-1">
-                        <button class="btn  text-primary  p-0"> +</button>
+                        <button class="btn  text-primary  p-0" data-sum="plus" type="button"> +</button>
                     </td>
                 </table>
+                </form>
             </td>
             <td  class="d-none d-lg-table-cell">10 кг</td>
             <td class="d-block d-sm-table-cell text-sm-center">
-                4 125 ₽
+                <span   class="jsPrice">4 125</span> ₽
+            </td>
+            <td class="d-block d-sm-table-cell text-sm-center">
+                <span  class="jsCost">40 125</span> ₽
             </td>
             <td class="d-none d-sm-table-cell p-0 text-sm-center">
                 <button class="btn p-0 mb-2">

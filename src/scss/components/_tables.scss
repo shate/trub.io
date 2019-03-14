@@ -67,10 +67,8 @@ table{
         padding-top: 2px;
         padding-bottom: 2px;
         &:first-child{
-          width: 50%;
-          @include breakpoint(md) {
-            width: 55%;
-          }
+          width: 45%;
+
         }
         &:last-child{
           width: 40px;
@@ -80,7 +78,7 @@ table{
         }
 
         &:nth-child(2){
-          width: 100px;
+          width: 120px;
         }
         &:nth-child(2),
         &:nth-child(3),
@@ -91,7 +89,7 @@ table{
       td{
         vertical-align: middle;
         line-height: 1.2 !important;
-        &:nth-child(4),  &:nth-child(2){
+        &:nth-child(4), &:nth-child(5), &:nth-child(2){
           font-size: 30px;
           button{
             font-size: 30px;
@@ -99,7 +97,7 @@ table{
         }
         @include breakpoint(sm){
           height: 152px;
-          &:nth-child(4),  &:nth-child(2){
+          &:nth-child(4),  &:nth-child(5), &:nth-child(2){
             font-size: $base-font-size;
             button{
               font-size: $base-font-size;
@@ -112,6 +110,11 @@ table{
         &:nth-child(3){
         text-align: center;
       }
+        figure{
+          width: 100px;
+          max-width: 100px;
+          text-align: center;
+        }
 
       }
     }
