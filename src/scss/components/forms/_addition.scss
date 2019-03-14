@@ -1,0 +1,9 @@
+form[name=addition]{
+  .addition{
+   // border: none;
+    min-width:20px!important;
+    max-width:99.99%!important;
+    transition: width 0.25s;
+    text-align:center;
+  }
+}
