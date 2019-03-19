@@ -18,5 +18,7 @@ require('./lib/loader');
 require('./lib/starsRating');
 require('./lib/jsAddition');
 require('./lib/loadResponse');
+require('./lib/cleanForm');
+
 
 
