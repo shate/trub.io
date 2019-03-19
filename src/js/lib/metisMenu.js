@@ -7,6 +7,8 @@ import MetisMenu from 'metismenujs';
 document.addEventListener('DOMContentLoaded', function() {
 
     if (document.getElementById('menu')) {
-        new MetisMenu("#menu", {});
+        new MetisMenu("#menu", {
+            triggerElement: '.menu__link__chevron'
+        });
     }
 });
