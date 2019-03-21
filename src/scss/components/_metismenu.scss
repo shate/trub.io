@@ -3,6 +3,12 @@
   margin-left: - $aside-width;
   transition: margin-left 0.5s linear;
 }
+.metismenu li{
+  margin-bottom: 0!important;
+}
+.metismenu li a{
+  padding-right: 5px!important;
+}
 .menu__item{
   display: flex;
   justify-content: space-between;
@@ -27,7 +33,7 @@
   color: $base-font-color;
 }
 .menu__link__chevron{
-  color: $main-blue;
+  color: $main-blue!important;
   transition: 0.4s;
   width: 0.7em;
   height: 0.7em;
@@ -39,17 +45,20 @@
 .menu__link__chevron:hover{
   text-decoration: none;
 }
-.metismenu li.active .menu__link__chevron{
+.metismenu li.active > .menu__link__chevron{
   transform: translateX(-5px) rotate(90deg);
 }
 .menu__submenu{
   width: 100%;
-  padding-left: 5px;
+  padding-left: 10px;
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   -o-flex-direction: column;
   flex-direction: column;
+}
+.menu__submenu .menu__link{
+  padding-left: 0;
 }
 .metismenu .active{
   background-color: #0443ae;
@@ -64,5 +73,14 @@
   display: block;
 }
 .metismenu .active .menu__link, .metismenu .active .menu__link__chevron{
-  color: #fff;
+  color: #fff!important;
+}
+.metismenu .active .menu__submenu .menu__link{
+  color: $base-font-color!important;
+}
+.metismenu .active .menu__submenu .menu__link__chevron{
+  color: $main-blue!important;
+}
+.metismenu .active .active{
+  background-color: #fff;
 }
